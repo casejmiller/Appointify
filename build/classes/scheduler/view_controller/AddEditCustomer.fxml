@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.view_controller.AddEditCustomerController">
+   <children>
+      <Label fx:id="lblCusTitle" layoutX="34.0" layoutY="23.0" text="Add Customer">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCusName" layoutX="155.0" layoutY="85.0" promptText="Name" />
+      <TextField fx:id="txtCusAddress" layoutX="155.0" layoutY="120.0" promptText="Address" />
+      <TextField fx:id="txtCusCity" layoutX="155.0" layoutY="155.0" promptText="City" />
+      <TextField fx:id="txtCusCountry" layoutX="155.0" layoutY="190.0" promptText="Country" />
+      <TextField fx:id="txtCusPhone" layoutX="155.0" layoutY="260.0" promptText="Phone" />
+      <TextField fx:id="txtCusPostal" layoutX="155.0" layoutY="225.0" promptText="Postal Code" />
+      <Label layoutX="56.0" layoutY="89.0" text="Name" />
+      <Label layoutX="56.0" layoutY="124.0" text="Address" />
+      <Label layoutX="56.0" layoutY="159.0" text="City" />
+      <Label layoutX="56.0" layoutY="194.0" text="Country" />
+      <Label layoutX="56.0" layoutY="229.0" text="Postal Code" />
+      <Label layoutX="56.0" layoutY="264.0" text="Phone" />
+      <Button defaultButton="true" layoutX="51.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="38.0" prefWidth="64.0" text="Save" />
+      <Button cancelButton="true" layoutX="283.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="38.0" prefWidth="64.0" text="Cancel" />
+   </children>
+</AnchorPane>

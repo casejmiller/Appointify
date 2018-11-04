@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduler.view_controller.MainScreenController">
+   <children>
+      <Label layoutX="308.0" layoutY="45.0" prefHeight="38.0" prefWidth="172.0" text="Appointments">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <TableView fx:id="tvAppointments" layoutX="37.0" layoutY="86.0" prefHeight="411.0" prefWidth="688.0">
+        <columns>
+          <TableColumn fx:id="colDate" prefWidth="85.0" text="Date" />
+          <TableColumn fx:id="colStartTime" prefWidth="71.0" text="Start Time" />
+            <TableColumn fx:id="colEndTime" minWidth="0.0" prefWidth="66.0" text="End Time" />
+            <TableColumn fx:id="colCustomer" prefWidth="118.0" text="Customer" />
+            <TableColumn fx:id="colConsultant" prefWidth="67.0" text="Consultant" />
+            <TableColumn fx:id="colType" prefWidth="63.0" text="Type" />
+            <TableColumn fx:id="colDetails" prefWidth="90.0" text="Details" />
+            <TableColumn fx:id="colLocation" prefWidth="127.0" text="Location" />
+        </columns>
+      </TableView>
+      <Button layoutX="684.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleMoveUp" prefHeight="25.0" prefWidth="33.0" text="&gt;&gt;" />
+      <Button layoutX="641.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleMoveBack" prefHeight="25.0" prefWidth="33.0" text="&lt;&lt;" />
+      <Label fx:id="lblDate" layoutX="369.0" layoutY="506.0" text="Date" />
+      <Button fx:id="btnToggleWeekMonth" layoutX="48.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleToggleWeekMonth" prefHeight="27.0" prefWidth="90.0" text="By Week" />
+      <Button layoutX="802.0" layoutY="524.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="38.0" prefWidth="77.0" text="Exit" />
+      <Button layoutX="739.0" layoutY="125.0" mnemonicParsing="false" onAction="#handleAddAppointment" prefHeight="27.0" prefWidth="140.0" text="Add Appointment" />
+      <Button layoutX="739.0" layoutY="165.0" mnemonicParsing="false" onAction="#handleModifyApt" prefHeight="27.0" prefWidth="140.0" text="Modify Appointment" />
+      <Button layoutX="739.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleCustomer" prefHeight="27.0" prefWidth="140.0" text="Customers" />
+      <Button layoutX="739.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleReports" prefHeight="27.0" prefWidth="140.0" text="Reports" />
+      <Label fx:id="lblWelcome" layoutX="354.0" layoutY="28.0" text="Welcome, User" />
+      <Button layoutX="739.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleDeleteAppointment" prefHeight="27.0" prefWidth="140.0" text="Delete Appointment" />
+   </children>
+</AnchorPane>
