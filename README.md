@@ -1,4 +1,4 @@
-# scheduling-application
+# Appointify
 
 This was a scheduling application project done for Software Development II.
 
